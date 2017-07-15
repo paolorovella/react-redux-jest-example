@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Counter /> renders with label as prop 1`] = `
+<span>
+  Counter
+  : 
+  0
+</span>
+`;
+
+exports[`<Counter /> renders with value as prop 1`] = `
+<span>
+  Counter
+  : 
+  30
+</span>
+`;
+
+exports[`<Counter /> renders without crashing 1`] = `
+<span>
+  Counter
+  : 
+  0
+</span>
+`;

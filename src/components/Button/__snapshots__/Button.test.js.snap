@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> (styled-component) renders with type prop 1`] = `
+.c0 {
+  color: #2E7D32;
+  border: 2px solid #2E7D32;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  outline: 0;
+}
+
+.c0:hover {
+  background-color: #1B5E20;
+  color: white;
+  border: 2px solid #1B5E20;
+}
+
+<button
+  className="c0"
+  type="success"
+/>
+`;
+
+exports[`<Button /> (styled-component) renders with type prop and match style rules 1`] = `
+.c0 {
+  color: #2E7D32;
+  border: 2px solid #2E7D32;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  outline: 0;
+}
+
+.c0:hover {
+  background-color: #1B5E20;
+  color: white;
+  border: 2px solid #1B5E20;
+}
+
+<button
+  className="c0"
+  type="success"
+/>
+`;
+
+exports[`<Button /> (styled-component) renders without crashing 1`] = `
+.c0 {
+  color: #1565C0;
+  border: 2px solid #1565C0;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  outline: 0;
+}
+
+.c0:hover {
+  background-color: #0D47A1;
+  color: white;
+  border: 2px solid #0D47A1;
+}
+
+<button
+  className="c0"
+  type="primary"
+/>
+`;
