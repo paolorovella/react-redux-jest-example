@@ -9,13 +9,6 @@ it('<Counter /> renders without crashing', () => {
   expect(tree).toMatchSnapshot();
 });
 
-test('<Counter /> renders with label as prop', () => {
-  const tree = renderer.create(
-    <Counter label="Counter" />,
-  ).toJSON();
-  expect(tree).toMatchSnapshot();
-});
-
 test('<Counter /> renders with value as prop', () => {
   const tree = renderer.create(
     <Counter value={30} />,

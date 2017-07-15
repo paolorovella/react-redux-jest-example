@@ -1,25 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Counter /> renders with label as prop 1`] = `
-<span>
-  Counter
-  : 
-  0
-</span>
-`;
-
 exports[`<Counter /> renders with value as prop 1`] = `
-<span>
-  Counter
-  : 
-  30
-</span>
+<div>
+  <div
+    className="sc-htpNat iAWPfp"
+  >
+    <button
+      className="sc-bdVaJa bVdEId"
+      label="Decrement"
+      onClick={[Function]}
+      type="danger"
+    >
+      Decrement
+    </button>
+    <button
+      className="sc-bdVaJa hjTpqZ"
+      label="Increment"
+      onClick={[Function]}
+      type="success"
+    >
+      Increment
+    </button>
+  </div>
+  <div
+    className="sc-bxivhb iPRuUZ"
+  >
+    <span>
+      Counter: 
+      30
+    </span>
+  </div>
+</div>
 `;
 
 exports[`<Counter /> renders without crashing 1`] = `
-<span>
-  Counter
-  : 
-  0
-</span>
+<div>
+  <div
+    className="sc-htpNat iAWPfp"
+  >
+    <button
+      className="sc-bdVaJa bVdEId"
+      label="Decrement"
+      onClick={[Function]}
+      type="danger"
+    >
+      Decrement
+    </button>
+    <button
+      className="sc-bdVaJa hjTpqZ"
+      label="Increment"
+      onClick={[Function]}
+      type="success"
+    >
+      Increment
+    </button>
+  </div>
+  <div
+    className="sc-bxivhb iPRuUZ"
+  >
+    <span>
+      Counter: 
+      0
+    </span>
+  </div>
+</div>
 `;

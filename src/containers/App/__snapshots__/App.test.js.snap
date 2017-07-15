@@ -2,23 +2,6 @@
 
 exports[`<App /> renders without crashing 1`] = `
 .c4 {
-  color: #2E7D32;
-  border: 2px solid #2E7D32;
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1em;
-  cursor: pointer;
-  outline: 0;
-}
-
-.c4:hover {
-  background-color: #1B5E20;
-  color: white;
-  border: 2px solid #1B5E20;
-}
-
-.c5 {
   color: #D32F2F;
   border: 2px solid #D32F2F;
   background-color: white;
@@ -29,27 +12,27 @@ exports[`<App /> renders without crashing 1`] = `
   outline: 0;
 }
 
-.c5:hover {
+.c4:hover {
   background-color: #B71C1C;
   color: white;
   border: 2px solid #B71C1C;
 }
 
-.c1 {
-  -webkit-animation: App-logo-spin infinite 20s linear;
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.c5 {
+  color: #2E7D32;
+  border: 2px solid #2E7D32;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  outline: 0;
 }
 
-.c0 {
-  max-width: 1440px;
-  margin: auto;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.c2 {
-  font-weight: 600;
+.c5:hover {
+  background-color: #1B5E20;
+  color: white;
+  border: 2px solid #1B5E20;
 }
 
 .c3 {
@@ -71,7 +54,26 @@ exports[`<App /> renders without crashing 1`] = `
 }
 
 .c6 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
   margin-top: 20px;
+}
+
+.c1 {
+  -webkit-animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.c0 {
+  max-width: 1440px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.c2 {
+  font-weight: 600;
 }
 
 <div
@@ -84,34 +86,37 @@ exports[`<App /> renders without crashing 1`] = `
   <h2
     className="c2"
   >
-    React Redux Jest example
+    React Redux Jest Example
   </h2>
-  <div
-    className="c3"
-  >
-    <button
-      className="c4"
-      onClick={[Function]}
-      type="success"
+  <div>
+    <div
+      className="c3"
     >
-      Increment
-    </button>
-    <button
-      className="c5"
-      onClick={[Function]}
-      type="danger"
+      <button
+        className="c4"
+        label="Decrement"
+        onClick={[Function]}
+        type="danger"
+      >
+        Decrement
+      </button>
+      <button
+        className="c5"
+        label="Increment"
+        onClick={[Function]}
+        type="success"
+      >
+        Increment
+      </button>
+    </div>
+    <div
+      className="c6"
     >
-      Decrement
-    </button>
-  </div>
-  <div
-    className="c6"
-  >
-    <span>
-      Counter
-      : 
-      0
-    </span>
+      <span>
+        Counter: 
+        0
+      </span>
+    </div>
   </div>
 </div>
 `;

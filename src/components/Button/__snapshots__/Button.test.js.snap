@@ -20,8 +20,11 @@ exports[`<Button /> (styled-component) renders with type prop 1`] = `
 
 <button
   className="c0"
+  label="Button"
   type="success"
-/>
+>
+  Button
+</button>
 `;
 
 exports[`<Button /> (styled-component) renders with type prop and match style rules 1`] = `
@@ -44,8 +47,11 @@ exports[`<Button /> (styled-component) renders with type prop and match style ru
 
 <button
   className="c0"
+  label="Button"
   type="success"
-/>
+>
+  Button
+</button>
 `;
 
 exports[`<Button /> (styled-component) renders without crashing 1`] = `
@@ -68,6 +74,9 @@ exports[`<Button /> (styled-component) renders without crashing 1`] = `
 
 <button
   className="c0"
+  label="Button"
   type="primary"
-/>
+>
+  Button
+</button>
 `;

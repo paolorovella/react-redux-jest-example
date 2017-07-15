@@ -1,0 +1,26 @@
+exports[`Counter-1 1`] = `
+<div>
+  <div
+    className="sc-htpNat iAWPfp">
+    <button
+      className="sc-EHOje bfkyLT"
+      label="Decrement"
+      type="danger">
+      Decrement
+    </button>
+    <button
+      className="sc-EHOje dkKbKe"
+      label="Increment"
+      type="success">
+      Increment
+    </button>
+  </div>
+  <div
+    className="sc-bxivhb iPRuUZ">
+    <span>
+      Counter: 
+      0
+    </span>
+  </div>
+</div>
+`;

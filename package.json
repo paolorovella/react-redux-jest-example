@@ -1,8 +1,9 @@
 {
-  "name": "redux-mqtt-example",
+  "name": "react-redux-jest-example",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@storybook/react": "^3.1.8",
     "autoprefixer": "7.1.0",
     "babel-core": "6.24.1",
     "babel-eslint": "7.2.3",
@@ -34,6 +35,7 @@
     "promise": "7.1.1",
     "react-dev-utils": "^3.0.0",
     "react-error-overlay": "^1.0.7",
+    "snapguidist": "^2.0.0",
     "style-loader": "0.17.0",
     "sw-precache-webpack-plugin": "0.9.1",
     "url-loader": "0.5.8",
@@ -47,6 +49,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
+    "react-styleguidist": "^5.5.7",
     "react-test-renderer": "^15.6.1",
     "redux": "^3.6.0",
     "redux-devtools-extension": "^2.13.2",
@@ -55,7 +58,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
   },
   "jest": {
     "collectCoverageFrom": [

@@ -1,6 +1,7 @@
+import React from 'react';
 import styled from 'styled-components';
 
-const Logo = styled.img`
+const StyledLogo = styled.img`
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 
@@ -10,4 +11,5 @@ const Logo = styled.img`
   };
 `;
 
+const Logo = ({ ...props }) => <StyledLogo {...props} />;
 export default Logo;

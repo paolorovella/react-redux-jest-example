@@ -1,0 +1,8 @@
+exports[`Button-1 1`] = `
+<button
+  className="sc-EHOje eRpRTd"
+  label="Button"
+  type="primary">
+  Button
+</button>
+`;

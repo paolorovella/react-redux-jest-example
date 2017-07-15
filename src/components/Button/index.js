@@ -1,7 +1,12 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import theme from 'src/config/theme';
 
-const Button = styled.button`
+/**
+ * Button component
+ */
+const StyledButton = styled.button`
   color: ${props => (
     theme.buttons[props.type].default ||
     theme.buttons.primary.default
@@ -30,8 +35,21 @@ const Button = styled.button`
   }
 `;
 
+const Button = ({ ...props }) => (
+  <StyledButton {...props}>{props.label}</StyledButton>
+);
+
 Button.defaultProps = {
   type: 'primary',
+  label: 'Button',
+};
+
+Button.propTypes = {
+  /** Button label */
+  label: PropTypes.string,
+  /** Button type (it can be 'success', 'danger' or 'primary') */
+  type: PropTypes.string,
 };
 
 export default Button;
+
