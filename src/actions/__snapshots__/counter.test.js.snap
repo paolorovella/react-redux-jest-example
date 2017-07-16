@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter actions Counter decrement action 1`] = `
+Object {
+  "type": "/App/DECREMENT",
+}
+`;
+
+exports[`Counter actions Counter increment action 1`] = `
+Object {
+  "type": "/App/INCREMENT",
+}
+`;

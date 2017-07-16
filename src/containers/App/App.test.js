@@ -1,13 +1,18 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import 'jest-styled-components';
-
+import { mount, shallow } from 'enzyme';
 import store from 'src/store';
 import App from '.';
 
-it('<App /> renders without crashing', () => {
-  const tree = renderer.create(
+test('<App /> mounts without crashing', () => {
+  const wrapper = mount(
     <App store={store} />,
-  ).toJSON();
-  expect(tree).toMatchSnapshot();
+  );
+  expect(wrapper).toMatchSnapshot();
+});
+
+test('<App /> renders', () => {
+  const wrapper = shallow(
+    <App store={store} />,
+  );
+  expect(wrapper).toMatchSnapshot();
 });

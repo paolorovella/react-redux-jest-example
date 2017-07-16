@@ -1,122 +1,172 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<App /> renders without crashing 1`] = `
-.c4 {
-  color: #D32F2F;
-  border: 2px solid #D32F2F;
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1em;
-  cursor: pointer;
-  outline: 0;
-}
-
-.c4:hover {
-  background-color: #B71C1C;
-  color: white;
-  border: 2px solid #B71C1C;
-}
-
-.c5 {
-  color: #2E7D32;
-  border: 2px solid #2E7D32;
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1em;
-  cursor: pointer;
-  outline: 0;
-}
-
-.c5:hover {
-  background-color: #1B5E20;
-  color: white;
-  border: 2px solid #1B5E20;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-between;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: space-between;
-  justify-content: space-between;
-  -webkit-box-pack: space-around;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  margin: auto;
-  margin-top: 20px;
-  max-width: 260px;
-}
-
-.c6 {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.c1 {
-  -webkit-animation: App-logo-spin infinite 20s linear;
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.c0 {
-  max-width: 1440px;
-  margin: auto;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.c2 {
-  font-weight: 600;
-}
-
-<div
-  className="c0"
+exports[`<App /> mounts without crashing 1`] = `
+<Connect(App)
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
 >
-  <img
-    className="c1"
-    src="logo.svg"
-  />
-  <h2
-    className="c2"
+  <App
+    counter={0}
+    decrement={[Function]}
+    increment={[Function]}
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+    storeSubscription={
+      Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "dispatch": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+          Symbol(observable): [Function],
+        },
+        "unsubscribe": [Function],
+      }
+    }
   >
-    React Redux Jest Example
-  </h2>
-  <div>
-    <div
-      className="c3"
-    >
-      <button
-        className="c4"
-        label="Decrement"
-        onClick={[Function]}
-        type="danger"
+    <styled.div>
+      <div
+        className="sc-ifAKCX iGUmiv"
       >
-        Decrement
-      </button>
-      <button
-        className="c5"
-        label="Increment"
-        onClick={[Function]}
-        type="success"
-      >
-        Increment
-      </button>
-    </div>
-    <div
-      className="c6"
-    >
-      <span>
-        Counter: 
-        0
-      </span>
-    </div>
-  </div>
-</div>
+        <Logo
+          src="logo.svg"
+        >
+          <styled.img
+            src="logo.svg"
+          >
+            <img
+              className="sc-bxivhb gxVCyX"
+              src="logo.svg"
+            />
+          </styled.img>
+        </Logo>
+        <styled.h2>
+          <h2
+            className="sc-EHOje gLWsgx"
+          >
+            React Redux Jest Example
+          </h2>
+        </styled.h2>
+        <Counter
+          decrement={[Function]}
+          increment={[Function]}
+          value={0}
+        >
+          <div>
+            <styled.div>
+              <div
+                className="sc-bwzfXH fyTSsl"
+              >
+                <Button
+                  label="Decrement"
+                  onClick={[Function]}
+                  type="danger"
+                >
+                  <styled.button
+                    label="Decrement"
+                    onClick={[Function]}
+                    type="danger"
+                  >
+                    <button
+                      className="sc-bdVaJa bVdEId"
+                      label="Decrement"
+                      onClick={[Function]}
+                      type="danger"
+                    >
+                      Decrement
+                    </button>
+                  </styled.button>
+                </Button>
+                <Button
+                  label="Increment"
+                  onClick={[Function]}
+                  type="success"
+                >
+                  <styled.button
+                    label="Increment"
+                    onClick={[Function]}
+                    type="success"
+                  >
+                    <button
+                      className="sc-bdVaJa hjTpqZ"
+                      label="Increment"
+                      onClick={[Function]}
+                      type="success"
+                    >
+                      Increment
+                    </button>
+                  </styled.button>
+                </Button>
+              </div>
+            </styled.div>
+            <styled.div>
+              <div
+                className="sc-htpNat jMtkWU"
+              >
+                <span>
+                  Counter: 
+                  0
+                </span>
+              </div>
+            </styled.div>
+          </div>
+        </Counter>
+      </div>
+    </styled.div>
+  </App>
+</Connect(App)>
+`;
+
+exports[`<App /> renders 1`] = `
+<App
+  counter={0}
+  decrement={[Function]}
+  increment={[Function]}
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "notify": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      },
+      "unsubscribe": null,
+    }
+  }
+/>
 `;

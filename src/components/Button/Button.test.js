@@ -1,29 +1,37 @@
 import React from 'react';
+import { mount, shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
 import theme from 'src/config/theme';
 import 'jest-styled-components';
 
 import { Button } from 'src/components';
 
-it('<Button /> (styled-component) renders without crashing', () => {
-  const tree = renderer.create(
+test('<Button /> (styled-component) mounts without crashing', () => {
+  const wrapper = mount(
     <Button />,
-  ).toJSON();
-  expect(tree).toMatchSnapshot();
+  );
+  expect(wrapper).toMatchSnapshot();
 });
 
-it('<Button /> (styled-component) renders with type prop', () => {
-  const tree = renderer.create(
-    <Button type="success" />,
-  ).toJSON();
-  expect(tree).toMatchSnapshot();
+test('<Button /> (styled-component) renders', () => {
+  const wrapper = shallow(
+    <Button />,
+  );
+  expect(wrapper).toMatchSnapshot();
 });
 
-it('<Button /> (styled-component) renders with type prop and match style rules', () => {
-  const tree = renderer.create(
+test('<Button /> (styled-component) renders with type prop', () => {
+  const wrapper = shallow(
+    <Button type="success" />,
+  );
+  expect(wrapper).toMatchSnapshot();
+});
+
+test('<Button /> (styled-component) renders with type prop and match style rules', () => {
+  const wrapper = renderer.create(
     <Button type="success" />,
   ).toJSON();
-  expect(tree).toMatchSnapshot();
-  expect(tree).toHaveStyleRule('color', theme.buttons.success.default);
-  expect(tree).toHaveStyleRule('border', `2px solid ${theme.buttons.success.default}`);
+  expect(wrapper).toMatchSnapshot();
+  expect(wrapper).toHaveStyleRule('color', theme.buttons.success.default);
+  expect(wrapper).toHaveStyleRule('border', `2px solid ${theme.buttons.success.default}`);
 });

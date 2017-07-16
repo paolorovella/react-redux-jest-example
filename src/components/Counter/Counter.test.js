@@ -1,17 +1,24 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { mount, shallow } from 'enzyme';
 import Counter from '.';
 
-it('<Counter /> renders without crashing', () => {
-  const tree = renderer.create(
+test('<Counter /> mounts without crashing', () => {
+  const tree = mount(
     <Counter />,
-  ).toJSON();
+  );
+  expect(tree).toMatchSnapshot();
+});
+
+test('<Counter /> renders', () => {
+  const tree = shallow(
+    <Counter />,
+  );
   expect(tree).toMatchSnapshot();
 });
 
 test('<Counter /> renders with value as prop', () => {
-  const tree = renderer.create(
+  const tree = shallow(
     <Counter value={30} />,
-  ).toJSON();
+  );
   expect(tree).toMatchSnapshot();
 });

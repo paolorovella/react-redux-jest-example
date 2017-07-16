@@ -1,8 +1,0 @@
-exports[`Button-3 1`] = `
-<button
-  className="sc-EHOje dkKbKe"
-  label="Success"
-  type="success">
-  Success
-</button>
-`;

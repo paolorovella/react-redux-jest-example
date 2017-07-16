@@ -1,67 +1,114 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Counter /> renders with value as prop 1`] = `
-<div>
-  <div
-    className="sc-htpNat iAWPfp"
-  >
-    <button
-      className="sc-bdVaJa bVdEId"
-      label="Decrement"
-      onClick={[Function]}
-      type="danger"
-    >
-      Decrement
-    </button>
-    <button
-      className="sc-bdVaJa hjTpqZ"
-      label="Increment"
-      onClick={[Function]}
-      type="success"
-    >
-      Increment
-    </button>
+exports[`<Counter /> mounts without crashing 1`] = `
+<Counter
+  decrement={[Function]}
+  increment={[Function]}
+  value={0}
+>
+  <div>
+    <styled.div>
+      <div
+        className="sc-htpNat iAWPfp"
+      >
+        <Button
+          label="Decrement"
+          onClick={[Function]}
+          type="danger"
+        >
+          <styled.button
+            label="Decrement"
+            onClick={[Function]}
+            type="danger"
+          >
+            <button
+              className="sc-bdVaJa bVdEId"
+              label="Decrement"
+              onClick={[Function]}
+              type="danger"
+            >
+              Decrement
+            </button>
+          </styled.button>
+        </Button>
+        <Button
+          label="Increment"
+          onClick={[Function]}
+          type="success"
+        >
+          <styled.button
+            label="Increment"
+            onClick={[Function]}
+            type="success"
+          >
+            <button
+              className="sc-bdVaJa hjTpqZ"
+              label="Increment"
+              onClick={[Function]}
+              type="success"
+            >
+              Increment
+            </button>
+          </styled.button>
+        </Button>
+      </div>
+    </styled.div>
+    <styled.div>
+      <div
+        className="sc-bxivhb iPRuUZ"
+      >
+        <span>
+          Counter: 
+          0
+        </span>
+      </div>
+    </styled.div>
   </div>
-  <div
-    className="sc-bxivhb iPRuUZ"
-  >
-    <span>
-      Counter: 
-      30
-    </span>
-  </div>
-</div>
+</Counter>
 `;
 
-exports[`<Counter /> renders without crashing 1`] = `
+exports[`<Counter /> renders 1`] = `
 <div>
-  <div
-    className="sc-htpNat iAWPfp"
-  >
-    <button
-      className="sc-bdVaJa bVdEId"
+  <styled.div>
+    <Button
       label="Decrement"
       onClick={[Function]}
       type="danger"
-    >
-      Decrement
-    </button>
-    <button
-      className="sc-bdVaJa hjTpqZ"
+    />
+    <Button
       label="Increment"
       onClick={[Function]}
       type="success"
-    >
-      Increment
-    </button>
-  </div>
-  <div
-    className="sc-bxivhb iPRuUZ"
-  >
+    />
+  </styled.div>
+  <styled.div>
     <span>
       Counter: 
       0
     </span>
-  </div>
+  </styled.div>
+</div>
+`;
+
+exports[`<Counter /> renders with value as prop 1`] = `
+<div>
+  <styled.div>
+    <Button
+      label="Decrement"
+      onClick={[Function]}
+      type="danger"
+    />
+    <Button
+      label="Increment"
+      onClick={[Function]}
+      type="success"
+    />
+  </styled.div>
+  <styled.div>
+    <span>
+      Counter: 
+      30
+    </span>
+  </styled.div>
 </div>
 `;

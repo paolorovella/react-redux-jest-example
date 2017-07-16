@@ -1,8 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<Logo /> mounts without crashing 1`] = `
+<Logo
+  src="logo.svg"
+>
+  <styled.img
+    src="logo.svg"
+  >
+    <img
+      className="sc-bdVaJa kzBKTv"
+      src="logo.svg"
+    />
+  </styled.img>
+</Logo>
+`;
+
 exports[`<Logo /> renders without crashing 1`] = `
-<img
-  className="sc-bdVaJa kzBKTv"
+<styled.img
   src="logo.svg"
 />
 `;

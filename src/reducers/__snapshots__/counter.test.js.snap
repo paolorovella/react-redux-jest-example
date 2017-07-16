@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`counter reducer counter should return the initial state 1`] = `
+Object {
+  "current": 0,
+}
+`;
+
+exports[`counter reducer counter/DECREMENT '5' to  '4' 1`] = `
+Object {
+  "current": 4,
+}
+`;
+
+exports[`counter reducer counter/INCREMENT '10' to  '11' 1`] = `
+Object {
+  "current": 11,
+}
+`;

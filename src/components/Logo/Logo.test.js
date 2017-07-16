@@ -1,12 +1,19 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { mount, shallow } from 'enzyme';
 import logo from 'src/assets/logo.svg';
 
 import Logo from '.';
 
-it('<Logo /> renders without crashing', () => {
-  const tree = renderer.create(
+test('<Logo /> mounts without crashing', () => {
+  const tree = mount(
     <Logo src={logo} />,
-  ).toJSON();
+  );
+  expect(tree).toMatchSnapshot();
+});
+
+test('<Logo /> renders without crashing', () => {
+  const tree = shallow(
+    <Logo src={logo} />,
+  );
   expect(tree).toMatchSnapshot();
 });
